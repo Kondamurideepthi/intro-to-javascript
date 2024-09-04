@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>user defined functons and statements</title>
+    <style>
+       #res
+       {
+        color:blue;
+        font-size: 50px;
+
+       }
+       #result
+       {
+        color:red;
+        font-size:50px;
+       }
+    </style>
+</head>
+<body>
+    <script>
+        function add()
+        {
+            var a=10;
+            var b=60;
+            return a+b;
+        }
+        document.write("<h1>sum of two numbers is:</h1> ",add())
+        </script>
+        <script>
+            function age()
+            {
+                if(document.getElementById("t1").value>=18)
+            {
+        
+                document.getElementById("res").innerHTML="eligible for voting";
+            }
+            else{
+                document.getElementById("res").innerHTML="not eligible for voting";
+            }
+            }
+        </script>
+            <h1>enter the age:<input type="text" id="t1"><br></h1>
+            <button type="button" onclick="age()">VERIFY</button>
+            <br>
+            <br>
+            <div id="res">
+
+            </div>
+            <script>
+                function relation()
+                {
+                    if(document.getElementById("a1").value==document.getElementById("a2").value)
+                {
+                    document.getElementById("result").innerHTML="Both are equal";
+                }
+                else if(document.getElementById("a1").value>document.getElementById("a2").value)
+                {
+                    document.getElementById("result").innerHTML="first is greater than second";
+                }
+                else{
+                     document.getElementById("result").innerHTML="first is less than second";
+
+                }
+                }
+            </script>
+            <h1>enter the first number:<input type="text" id="a1"></h1>
+            <h1>enter the second number:<input type="text" id="a2"></h1>
+            <button type="button" onclick="relation()">Relation Between Two Numbers</button><br><br>
+            <div id="result"></div>
+        
+</body>
+</html>
