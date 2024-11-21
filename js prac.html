@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1>Guess the Number Game</h1>
+    <input type="number" id="user1"/>
+    
+    <div>
+        <br/>
+    <button onclick="Number()">Guess the number</button>
+    </div>
+    <p id="guessing"></p>
+  </body>
+  <script>
+    let user =document.getElementById("user1");
+let guessing = document.getElementById("guessing");
+let randomNumber = Math.ceil(Math.random()*100);
+console.log(randomNumber)
+guessing.textContent="";
+function Number(){
+    
+    let userguess = parseInt(user.value);
+    if(userguess>randomNumber){
+        
+        guessing.textContent = `${userguess} is too high`
+        guessing.style.color="red";
+       
+    }
+    else if(userguess<randomNumber){
+        guessing.textContent="your guess is too low";
+        guessing.style.color="red";
+       
+    }
+    else if(userguess===randomNumber){
+        guessing.textContent="Congratulation you guessed the correct number";
+        guessing.style.color="green";
+       
+    }
+    else
+    {
+        guessing.textContent="please provide a valid text";
+        guessing.style.color="blue";
+      
+    }
+    
+}
+  </script>
+</html>
