@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Careers/IT Company</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         }
+         body
+          {
+        font-family:'Times New Roman', Times, serif;
+        line-height: 1.6;
+           }
+    
+         header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0px;
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+    }
+    main {
+        padding: 1rem;
+    }
+    .job-application h2 {
+        margin-bottom: 2rem;
+        font-size: 30px;
+    }
+    label {
+            display: block; 
+            font-size: 1.5em; 
+            margin-bottom: 5px; 
+    }
+    .vacancies h2 {
+        margin-bottom: 2rem;
+        font-size: 30px;
+        margin:20px 0px;
+    }
+    .vacancies p{
+        font-size: 20px;
+    }
+    form {
+        margin-top: 1rem;
+    }
+    
+    input[type="file"], input[type="email"], button {
+        display: block;
+        margin-top: 0.5rem;
+    }
+    
+    button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        margin:20px 0px;
+        font-size: 15px;
+    }
+    footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="career header">
+           Career Portal
+        </div>
+        
+    </header>
+    <main>
+        <section class="job-application">
+            <h2>Job Application</h2>
+            
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="vacancies">
+            <h2>Current Vacancies</h2>
+            <p>Check back for updates or sign up to receive notifications.</p>
+            
+                <input type="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Software IT Company. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

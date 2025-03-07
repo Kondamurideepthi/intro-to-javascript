@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | IT Company</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 10px 0px;
+            font-size: 3em; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+        #overview h2{
+            font-size: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .image {
+            width: 100%; 
+            max-width: 600px; 
+            height: auto; 
+        }
+
+        .atext{
+            font-size: 1.5em; 
+            color: blue;
+            margin: 0;
+        }
+        .text1 {
+            font-size: 1.5em; 
+            margin: 0;
+        }
+       #mission h2{
+        font-size: 2em;
+       }
+        #mission, #values, #team, #contact {
+            margin-bottom: 20px;
+        }
+        #values h2{
+            font-size: 2em;
+        }
+
+        #values ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #values li {
+            font-size: 1.5em; 
+            margin: 10px 0;
+        }
+        #team h2{
+            font-size:2em;
+        }
+        #team p{
+            font-size: 1.5em;
+        }
+        .section-image {
+            width: 100%; 
+            max-width: 600px; 
+            height: auto; 
+            display: block;
+            margin: 10px 0;
+        }
+        #contact h2{
+            font-size: 2em;
+        }
+        #contact p{
+            font-size: 1.5em;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About </h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Company Overview</a></li>
+                <li><a href="#mission">Mission Statement</a></li>
+                <li><a href="#values">Our Values</a></li>
+                <li><a href="#team">Meet the Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="overview">
+            <h2>Company Overview</h2>
+            <div class="grid-container">
+                <img src="./images/aboutlogo.jpg" alt="aboutlogo" class="image">
+                <div class="atext">
+                    <p>Welcome to our Bitzu company. Bitzu is an innovative IT startup dedicated to transforming the technology landscape. Our mission is to harness cutting-edge technology to solve complex problems, streamline operations, and create impactful solutions for businesses and individuals. We aim to be at the forefront of technological advancement, driving change and shaping the future of IT.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <h2>Mission Statement</h2>
+            <div class="text1">
+                <p>Our mission is to innovate and deliver exceptional technology services that empower businesses to achieve their goals and drive growth.</p>
+            </div>
+        </section>
+
+        <section id="values">
+            <h2>Our Values</h2>
+            <ul>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Customer Focus</li>
+                <li>Excellence</li>
+            </ul>
+        </section>
+
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <img src="./images/about team.jpg" alt="about team" class="section-image">
+            <p>Our team is composed of experienced professionals who are passionate about technology and committed to delivering the best solutions for our clients.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get in touch, please email us at <a href="mailto:contact@bitzucompany.com">contact@bitzucompany.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IT Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
